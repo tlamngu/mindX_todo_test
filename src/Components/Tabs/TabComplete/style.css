@@ -1,0 +1,17 @@
+.TabAll{
+    width: 100%;
+    height: 100%;
+}
+.deleteAllButton{
+    /* width: ; */
+    background-color: rgb(255, 63, 63);
+    margin-left: auto;
+    right: 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.deleteAllButton:hover{
+    cursor: pointer;
+    background-color: rgb(255, 35, 35);
+    
+}

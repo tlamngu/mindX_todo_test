@@ -1,0 +1,27 @@
+.tabSelector{
+    margin-top: 1rem;
+    width: 50vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    /* border: 1px solid #bebebe; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border-radius: 2rem; */
+}
+.tabSelector button{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    margin: auto;
+    height: 2rem;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    background-color: white;
+}
+.tabSelector button:hover{
+    cursor: pointer;
+    border-bottom: 2px solid rgb(173, 216, 255);
+}
+.tabSelector .active{
+    border-bottom: 2px solid rgb(35, 149, 255);
+
+}
