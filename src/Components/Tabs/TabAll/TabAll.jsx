@@ -38,12 +38,22 @@ function TabAll() {
         saveTasks(remainingTasks);
     };
     const markTaskAsCompleted = (taskId) => {
-        const updatedTasks = {
-            ...TasksData,
-            [taskId]: { ...TasksData[taskId], completed: true }
-        };
-        SetTaskData(updatedTasks);
-        saveTasks(updatedTasks);
+        if(TasksData[taskId].completed == false){
+            const updatedTasks = {
+                ...TasksData,
+                [taskId]: { ...TasksData[taskId], completed: true }
+            };
+            SetTaskData(updatedTasks);
+            saveTasks(updatedTasks);
+        }else{
+            const updatedTasks = {
+                ...TasksData,
+                [taskId]: { ...TasksData[taskId], completed: false }
+            };
+            SetTaskData(updatedTasks);
+            saveTasks(updatedTasks);
+        }
+        
     };
     useEffect(() => { loadTasks(); });
     return (
